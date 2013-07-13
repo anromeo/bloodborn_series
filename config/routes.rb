@@ -1,4 +1,20 @@
 Bloodborn::Application.routes.draw do
+  get "excerpts/index"
+  get "excerpts/new"
+  get "excerpts/create"
+  get "excerpts/show"
+  get "excerpts/edit"
+  get "excerpts/update"
+  get "excerpts/destroy"
+  get "blogs/create"
+  get "blogs/update"
+  get "blogs/destroy"
+  get "blogs/edit"
+  get "blogs/new"
+  get "blogs/index"
+  get "blogs/show"
+  
+  root to: "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
