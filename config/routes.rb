@@ -1,4 +1,6 @@
 Bloodborn::Application.routes.draw do
+  resources :extras
+
   get "excerpts/index"
   get "excerpts/new"
   get "excerpts/create"

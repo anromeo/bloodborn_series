@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130713050835) do
+ActiveRecord::Schema.define(version: 20130721051144) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -25,6 +25,12 @@ ActiveRecord::Schema.define(version: 20130713050835) do
   create_table "excerpts", force: true do |t|
     t.string   "title"
     t.text     "excerpt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "extras", force: true do |t|
+    t.text     "information"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
