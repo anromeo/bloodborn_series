@@ -17,6 +17,10 @@ Bloodborn::Application.routes.draw do
   get "blogs/show"
   
   root to: "home#index"
+  get "/about" => "home#about", as: :about  
+  get "/excerpts" => "home#excerpts", as: :excerpts
+  get "/freebies" => "home#goodies", as: :freebies
+  get "/bloodlines" => "home#bloodlines", as: :bloodlines
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

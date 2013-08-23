@@ -3,6 +3,9 @@ class HomeController < ApplicationController
   def index
   end
 
+  def bloodlines
+  end
+  
   def about
   end
 
